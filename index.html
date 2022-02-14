@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+
+			a{
+	text-decoration:none;
+ }
+
+a:hover{
+	color:#F00;
+	font-weight:bolder;
+	}
+			div.heart{
+				width: 200px;
+				height: 200px;
+				background-color: #f00;
+				margin: 200px auto;
+				transform: rotate(45deg);
+				filter: drop-shadow(0 0 30px #f00);
+				opacity: 0.8;
+				animation: 1s beat linear infinite;
+			}
+			@keyframes beat{
+				70%{transform: scale(1.2) rotate(45deg);}
+				100%{transform: scale(0.8) rotate(45deg);}
+			}
+			div.heart:before{
+				content: "";
+				width: 200px;
+				height: 200px;
+				background-color: #f00;
+				display: block;
+				margin-left: -100px;
+				border-radius: 50%;
+			}
+			div.heart:after{
+				content: "";
+				width: 200px;
+				height: 200px;
+				background-color: #f00;
+				display: block;
+				margin-top: -300px;
+				border-radius: 100px;
+			}
+      .myText{
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 80px;
+        text-align: center;
+        color: #F00;
+
+      }
+      .main{
+        background: url("蓝色碎片飞舞.gif");
+      }
+		</style>
+	</head>
+	<body class="main">
+    <div class="heart"></div>
+		
+			
+		</div>
+		<div class="myText">情人节快乐</div>
+	</body>
+</html>
